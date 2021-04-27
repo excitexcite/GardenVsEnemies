@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This script is used to spawn attackers. 
+/// </summary>
 public class AttackerSpawner : MonoBehaviour
 {
 

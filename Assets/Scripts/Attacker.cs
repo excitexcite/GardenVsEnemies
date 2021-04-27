@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+///  This script is used to make attackers move. It also changes move speed throught animation events 
+///  to play animation correctly. Placed on attackers.
+/// </summary>
 public class Attacker : MonoBehaviour
 {
 
