@@ -5,13 +5,13 @@ using UnityEngine;
 public class Shooter : MonoBehaviour
 {
 
-    [SerializeField] GameObject projectile;
+    [SerializeField] GameObject projectilePrefab;
     [SerializeField] GameObject gun;
     [SerializeField] float damage;
 
     public void Fire()
     {
-        Instantiate(projectile, gun.transform.position, Quaternion.identity);
+        var projectile = Instantiate(projectilePrefab, gun.transform.position, Quaternion.identity);
     }
 
 }
