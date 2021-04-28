@@ -25,7 +25,7 @@ public class StarsDisplay : MonoBehaviour
 
     public void SpendStars(int amount)
     {
-        // if we have enought stars to buy a defender
+        // if we have enought stars to buy a defenderS
         if (stars >= amount)
         {
             stars -= amount;
