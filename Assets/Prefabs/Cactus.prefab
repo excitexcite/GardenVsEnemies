@@ -194,4 +194,5 @@ MonoBehaviour:
   projectilePrefab: {fileID: 3606400135035167790, guid: e7a529b17b1d26e498ce483d1a8c59d8,
     type: 3}
   gun: {fileID: 2340921479610106080}
+  animator: {fileID: 237354617}
   damage: 100
