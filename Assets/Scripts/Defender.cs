@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This script is used to store stars cost of a defender, it also has public method that allows to earn resources as
+/// trophy animation event. Placed on all the defenders
+/// </summary>
 public class Defender : MonoBehaviour
 {
     [SerializeField] int starCost = 100;

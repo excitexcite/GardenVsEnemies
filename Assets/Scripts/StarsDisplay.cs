@@ -21,6 +21,12 @@ public class StarsDisplay : MonoBehaviour
         starsText.text = stars.ToString();
     }
 
+    // function that check if we have enough stars to place defender
+    public bool HaveEnoughStars(int amount)
+    {
+        return stars >= amount;
+    }
+
     public void AddStars(int amount) { stars += amount; }
 
     public void SpendStars(int amount)

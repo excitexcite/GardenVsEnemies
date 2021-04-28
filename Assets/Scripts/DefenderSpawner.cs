@@ -14,9 +14,24 @@ public class DefenderSpawner : MonoBehaviour
     private void OnMouseDown()
     {
         Vector2 worldPos = GetSquareClicked();
-        SpawnDefender(worldPos);
+        AttemptToPlaceDefenderAt(worldPos);
     }
 
+    // function that getting current amount of stars and decides to place defender or not
+    private void AttemptToPlaceDefenderAt(Vector2 gridPos)
+    {
+        // get StarsDisplay object that stores resources
+        var starDisplay = FindObjectOfType<StarsDisplay>();
+        int defenderCost = defender.GetStarCost(); // getting defender const
+        // if we have enough resources
+        if (starDisplay.HaveEnoughStars(defenderCost))
+        {
+            SpawnDefender(gridPos); 
+            starDisplay.SpendStars(defenderCost); // decreasing amount of stars
+        }
+    }
+
+    // this function is used to set defender prefab corrsponding to the selected one
     public void SetSelectedDefender(Defender selectedDefender)
     {
         defender = selectedDefender;
