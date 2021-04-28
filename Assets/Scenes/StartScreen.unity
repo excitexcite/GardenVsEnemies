@@ -595,11 +595,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lizzard (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 579150030287069095, guid: b53da7434dab29b48a5e7d329f14a120,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 579150030287069146, guid: b53da7434dab29b48a5e7d329f14a120,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1861,11 +1856,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cactus
-      objectReference: {fileID: 0}
-    - target: {fileID: 7801506594190421130, guid: c0f6d93d44c8bdb40b318dd39319621f,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0f6d93d44c8bdb40b318dd39319621f, type: 3}

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1124215872}
   - component: {fileID: 1124215871}
   - component: {fileID: 1124215870}
+  - component: {fileID: 88706829}
   m_Layer: 0
   m_Name: Lizzard
   m_TagString: Untagged
@@ -68,6 +69,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
+  animator: {fileID: 579150030287069092}
 --- !u!50 &1124215872
 Rigidbody2D:
   serializedVersion: 4
@@ -99,10 +101,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.0041558146}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -113,7 +115,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8508339, y: 0.92142177}
+  m_Size: {x: 0.8508339, y: 0.91311014}
   m_EdgeRadius: 0
 --- !u!114 &1124215870
 MonoBehaviour:
@@ -128,6 +130,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+--- !u!114 &88706829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579150030287069095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c42ef2a51277af4080a35d76e3e61d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2125119492914344982
 GameObject:
   m_ObjectHideFlags: 0
