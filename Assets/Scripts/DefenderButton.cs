@@ -4,10 +4,15 @@ using UnityEngine;
 
 /// <summary>
 /// This script is used to change color (look like they become active)
-/// on defenders exaples (buttons) when player click on them. Placed on each defender button
+/// on defenders exaples (buttons) when player click on them. The script also set defender to create (setted values
+/// is used by DefenderSpawner.
+/// Placed on each defender button.
 /// </summary>
 public class DefenderButton : MonoBehaviour
 {
+
+    [SerializeField] Defender defenderPrefab;
+
     private void OnMouseDown()
     {
         // iterate through all buttons for defender creation
@@ -18,5 +23,7 @@ public class DefenderButton : MonoBehaviour
         }
         // make selected one white (active)
         GetComponent<SpriteRenderer>().color = Color.white;
+        // setting defender prefab to DefenderSpawner to create the defender
+        FindObjectOfType<DefenderSpawner>().SetSelectedDefender(defenderPrefab);
     }
 }

@@ -2,15 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This script is used to create defenders on the screen. 
+/// </summary>
 public class DefenderSpawner : MonoBehaviour
 {
-
-    [SerializeField] GameObject defender; // defender prefab
+    //at first has type GameObject, with creation of Defender script change type to Defender
+    // same thing with SerializedField
+    Defender defender; // defender prefab
 
     private void OnMouseDown()
     {
         Vector2 worldPos = GetSquareClicked();
         SpawnDefender(worldPos);
+    }
+
+    public void SetSelectedDefender(Defender selectedDefender)
+    {
+        defender = selectedDefender;
     }
 
     private Vector2 GetSquareClicked()
@@ -36,7 +45,7 @@ public class DefenderSpawner : MonoBehaviour
     private void SpawnDefender(Vector2 roundedPos)
     {
 
-        GameObject newDefender = Instantiate(defender, roundedPos, Quaternion.identity);
+        Defender newDefender = Instantiate(defender, roundedPos, Quaternion.identity);
     }
 
 }
