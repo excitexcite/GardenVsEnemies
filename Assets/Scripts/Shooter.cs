@@ -24,13 +24,13 @@ public class Shooter : MonoBehaviour
         if (IsAttackerInLane())
         {
             // Some Shoot Code
-            Debug.Log("Shoot pew-pew");
+            //Debug.Log("Shoot pew-pew");
             animator.SetBool("IsAttacking", true);
         }
         else
         {
             // Not Shoot
-            Debug.Log("NOT SHOOT");
+            //Debug.Log("NOT SHOOT");
             animator.SetBool("IsAttacking", false);
         }
     }

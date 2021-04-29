@@ -40,10 +40,10 @@ public class DefenderSpawner : MonoBehaviour
     private Vector2 GetSquareClicked()
     {
         Vector2 clickPos = new Vector2(Input.mousePosition.x, Input.mousePosition.y); // getting actual click position
-        Debug.Log("X = " + clickPos.x.ToString() + ", Y = " + clickPos.y.ToString());
+        //Debug.Log("X = " + clickPos.x.ToString() + ", Y = " + clickPos.y.ToString());
         Vector2 worldPos = Camera.main.ScreenToWorldPoint(clickPos); // transorm clickPos to world position; values that are on game field
         // squares
-        Debug.Log("X = " + worldPos.x.ToString() + ", Y = " + worldPos.y.ToString());
+        //Debug.Log("X = " + worldPos.x.ToString() + ", Y = " + worldPos.y.ToString());
 
         Vector2 gridPos = SnapToGrid(worldPos); // rounding position to place defender exactly in the center of the square
         return gridPos;

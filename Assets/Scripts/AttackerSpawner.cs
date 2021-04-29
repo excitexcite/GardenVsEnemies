@@ -23,6 +23,11 @@ public class AttackerSpawner : MonoBehaviour
         }
     }
 
+    public void StopSpawning()
+    {
+        spawn = false;
+    }
+
     private void SpawnAttacker()
     {
         var attackerIndex = Random.Range(0, attackerPrefabArray.Length);
@@ -34,6 +39,7 @@ public class AttackerSpawner : MonoBehaviour
         Attacker newAttacker =
            Instantiate(myAttacker, transform.position, transform.rotation);
         newAttacker.transform.parent = transform; // making attacker child object of its` spawner
+        FindObjectOfType<LevelController>().AttackerSpawned();
     }
 
 }

@@ -648,7 +648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textMeshPro: {fileID: 770733979}
-  time: 3
+  time: 20
   speed: 1
 --- !u!114 &770733979
 MonoBehaviour:
@@ -759,12 +759,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9589bf7f500572c4dbe910a2945ecc4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1060654247 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7258144582271628339, guid: 4d86303edb10b2347a7939b2947269d2,
-    type: 3}
-  m_PrefabInstance: {fileID: 7441768125099278291}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1222983137
 GameObject:
   m_ObjectHideFlags: 0
@@ -1420,56 +1414,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1250408994879203182, guid: fc0eee403d882d4448a67a91c46ea9b3,
-        type: 3}
-      propertyPath: mixSpawnDelay
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1250408994879203182, guid: fc0eee403d882d4448a67a91c46ea9b3,
-        type: 3}
-      propertyPath: maxSpawnDelay
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1250408995483694216, guid: fc0eee403d882d4448a67a91c46ea9b3,
-        type: 3}
-      propertyPath: mixSpawnDelay
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1250408995483694216, guid: fc0eee403d882d4448a67a91c46ea9b3,
-        type: 3}
-      propertyPath: maxSpawnDelay
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1250408995799227541, guid: fc0eee403d882d4448a67a91c46ea9b3,
-        type: 3}
-      propertyPath: mixSpawnDelay
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1250408995799227541, guid: fc0eee403d882d4448a67a91c46ea9b3,
-        type: 3}
-      propertyPath: maxSpawnDelay
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1250408995884491656, guid: fc0eee403d882d4448a67a91c46ea9b3,
-        type: 3}
-      propertyPath: mixSpawnDelay
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1250408995884491656, guid: fc0eee403d882d4448a67a91c46ea9b3,
-        type: 3}
-      propertyPath: maxSpawnDelay
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1250408996117749250, guid: fc0eee403d882d4448a67a91c46ea9b3,
-        type: 3}
-      propertyPath: mixSpawnDelay
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1250408996117749250, guid: fc0eee403d882d4448a67a91c46ea9b3,
-        type: 3}
-      propertyPath: maxSpawnDelay
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 1250408996292825954, guid: fc0eee403d882d4448a67a91c46ea9b3,
         type: 3}
       propertyPath: m_Name
@@ -2020,11 +1964,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelController
       objectReference: {fileID: 0}
-    - target: {fileID: 7901054252696880453, guid: 65261afa53cf92a4bb416cf9c69c2d38,
-        type: 3}
-      propertyPath: winLabel
-      value: 
-      objectReference: {fileID: 1060654247}
     - target: {fileID: 7901054252696880454, guid: 65261afa53cf92a4bb416cf9c69c2d38,
         type: 3}
       propertyPath: m_LocalPosition.x

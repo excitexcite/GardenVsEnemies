@@ -65,7 +65,7 @@ MonoBehaviour:
     type: 3}
   gun: {fileID: 2032207847761732050}
   animator: {fileID: 2032207846762202798}
-  damage: 0
+  damage: 100
 --- !u!95 &2032207846762202798
 Animator:
   serializedVersion: 3

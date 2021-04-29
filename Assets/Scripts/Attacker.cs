@@ -13,6 +13,11 @@ public class Attacker : MonoBehaviour
     [SerializeField] Animator animator;
     GameObject currentTarget;
 
+    private void OnDestroy()
+    {
+        FindObjectOfType<LevelController>().AttackerKilled();
+    }
+
     // Update is called once per frame
     void Update()
     {

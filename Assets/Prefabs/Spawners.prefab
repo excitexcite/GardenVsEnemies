@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mixSpawnDelay: 1
-  maxSpawnDelay: 1
+  maxSpawnDelay: 7
   attackerPrefabArray:
   - {fileID: 579150030287069147, guid: b53da7434dab29b48a5e7d329f14a120, type: 3}
   - {fileID: 7996320554771042230, guid: 7da443795e9f76741a415040ccfe2158, type: 3}
@@ -84,7 +84,7 @@ MonoBehaviour:
   mixSpawnDelay: 7
   maxSpawnDelay: 7
   attackerPrefabArray:
-  - {fileID: 0}
+  - {fileID: 7996320554771042230, guid: 7da443795e9f76741a415040ccfe2158, type: 3}
   - {fileID: 579150030287069147, guid: b53da7434dab29b48a5e7d329f14a120, type: 3}
 --- !u!114 &1250408995799227541
 MonoBehaviour:
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89e68ae9f1a2d76428c1aef9589d88b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mixSpawnDelay: 7
+  mixSpawnDelay: 1
   maxSpawnDelay: 7
   attackerPrefabArray:
   - {fileID: 579150030287069147, guid: b53da7434dab29b48a5e7d329f14a120, type: 3}

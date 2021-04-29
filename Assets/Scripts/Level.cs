@@ -35,4 +35,9 @@ public class Level : MonoBehaviour
     {
         SceneManager.LoadScene("LevelFail");
     }
+
+    public void LoadMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 }
