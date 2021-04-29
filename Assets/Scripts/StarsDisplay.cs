@@ -15,8 +15,12 @@ public class StarsDisplay : MonoBehaviour
     [SerializeField] int stars = 100;
     [SerializeField] TextMeshProUGUI starsText;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
+    {
+        UpdateDisplay();
+    }
+
+    private void UpdateDisplay()
     {
         starsText.text = stars.ToString();
     }
@@ -27,7 +31,11 @@ public class StarsDisplay : MonoBehaviour
         return stars >= amount;
     }
 
-    public void AddStars(int amount) { stars += amount; }
+    public void AddStars(int amount) 
+    { 
+        stars += amount;
+        UpdateDisplay();
+    }
 
     public void SpendStars(int amount)
     {
@@ -35,6 +43,7 @@ public class StarsDisplay : MonoBehaviour
         if (stars >= amount)
         {
             stars -= amount;
+            UpdateDisplay();
         }
     }
 
