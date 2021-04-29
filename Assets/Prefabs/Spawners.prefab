@@ -48,9 +48,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mixSpawnDelay: 1
-  maxSpawnDelay: 5
-  attackerPrefab: {fileID: 579150030287069147, guid: b53da7434dab29b48a5e7d329f14a120,
-    type: 3}
+  maxSpawnDelay: 1
+  attackerPrefabArray:
+  - {fileID: 579150030287069147, guid: b53da7434dab29b48a5e7d329f14a120, type: 3}
+  - {fileID: 7996320554771042230, guid: 7da443795e9f76741a415040ccfe2158, type: 3}
 --- !u!114 &1250408995884491656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63,10 +64,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89e68ae9f1a2d76428c1aef9589d88b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mixSpawnDelay: 1
-  maxSpawnDelay: 5
-  attackerPrefab: {fileID: 579150030287069147, guid: b53da7434dab29b48a5e7d329f14a120,
-    type: 3}
+  mixSpawnDelay: 7
+  maxSpawnDelay: 7
+  attackerPrefabArray:
+  - {fileID: 7996320554771042230, guid: 7da443795e9f76741a415040ccfe2158, type: 3}
+  - {fileID: 579150030287069147, guid: b53da7434dab29b48a5e7d329f14a120, type: 3}
 --- !u!114 &1250408995483694216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79,10 +81,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89e68ae9f1a2d76428c1aef9589d88b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mixSpawnDelay: 1
-  maxSpawnDelay: 5
-  attackerPrefab: {fileID: 579150030287069147, guid: b53da7434dab29b48a5e7d329f14a120,
-    type: 3}
+  mixSpawnDelay: 7
+  maxSpawnDelay: 7
+  attackerPrefabArray:
+  - {fileID: 0}
+  - {fileID: 579150030287069147, guid: b53da7434dab29b48a5e7d329f14a120, type: 3}
 --- !u!114 &1250408995799227541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95,10 +98,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89e68ae9f1a2d76428c1aef9589d88b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mixSpawnDelay: 1
-  maxSpawnDelay: 5
-  attackerPrefab: {fileID: 579150030287069147, guid: b53da7434dab29b48a5e7d329f14a120,
-    type: 3}
+  mixSpawnDelay: 7
+  maxSpawnDelay: 7
+  attackerPrefabArray:
+  - {fileID: 579150030287069147, guid: b53da7434dab29b48a5e7d329f14a120, type: 3}
 --- !u!114 &1250408994879203182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,10 +114,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89e68ae9f1a2d76428c1aef9589d88b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mixSpawnDelay: 1
-  maxSpawnDelay: 5
-  attackerPrefab: {fileID: 579150030287069147, guid: b53da7434dab29b48a5e7d329f14a120,
-    type: 3}
+  mixSpawnDelay: 7
+  maxSpawnDelay: 7
+  attackerPrefabArray:
+  - {fileID: 7996320554771042230, guid: 7da443795e9f76741a415040ccfe2158, type: 3}
 --- !u!1001 &1250408995427102082
 PrefabInstance:
   m_ObjectHideFlags: 0
