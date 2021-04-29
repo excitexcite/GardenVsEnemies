@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This script is used to specify fox attacker. Has functionality that allows fox to jump over the 
+/// stones (via animation).
+/// Placed on fox attacker
+/// </summary>
 public class Fox : MonoBehaviour
 {
     // fox has a collider
