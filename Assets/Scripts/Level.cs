@@ -30,6 +30,10 @@ public class Level : MonoBehaviour
     {
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
+    public void ReloadScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 
     public void LoadLevelFailScene()
     {

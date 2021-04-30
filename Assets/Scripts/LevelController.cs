@@ -8,6 +8,7 @@ using UnityEngine;
 public class LevelController : MonoBehaviour
 {
     [SerializeField] GameObject winLabel;
+    [SerializeField] GameObject looseLabel;
     [SerializeField] AudioClip winSound;
     [SerializeField] float winSoundVolume = 0.5f;
     [SerializeField] float timeToLoad = 4f;
@@ -17,6 +18,7 @@ public class LevelController : MonoBehaviour
     private void Start()
     {
         winLabel.SetActive(false);
+        looseLabel.SetActive(false);
     }
 
     public void AttackerSpawned() { numberOfAttackers++; }
@@ -43,6 +45,13 @@ public class LevelController : MonoBehaviour
     {
         winLabel.SetActive(true);
         AudioSource.PlayClipAtPoint(winSound, Camera.main.transform.position, winSoundVolume);
+        Time.timeScale = 0;
+    }
+
+    public void HandleLoseCondition()
+    {
+        looseLabel.SetActive(true);
+        //AudioSource.PlayClipAtPoint(winSound, Camera.main.transform.position, winSoundVolume);
         Time.timeScale = 0;
     }
 
