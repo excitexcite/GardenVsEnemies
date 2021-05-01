@@ -7,17 +7,23 @@ public class SettingController : MonoBehaviour
 {
 
     [SerializeField] Slider volumeSlider;
+    [SerializeField] Slider difficultySlider;
     [SerializeField] float defaultVolume = 0.8f;
+    [SerializeField] int defaultDifficulty= 0;
 
     public const string VOLUME_KEY = "volumeKey";
-    public const string DIFICULTY_KEY = "fidicultyKey";
+    public const string DIFFICULTY_KEY = "dificultyKey";
 
     const float MIN_VOLUME = 0f;
     const float MAX_VOLUME = 1f;
 
+    const int MIN_DIFFICULTY = 0;
+    const int MAX_DIFFICULTY = 2;
+
     private void Start()
     {
         volumeSlider.value = GetVolumeValue();
+        difficultySlider.value = GetDifficultyValue();
     }
 
     private void Update()
@@ -25,7 +31,7 @@ public class SettingController : MonoBehaviour
         var musicPlayer = FindObjectOfType<MusicPlayer>();
         if (musicPlayer)
         {
-            musicPlayer.SetVolume(volumeSlider.value); // this functin call set audio source volume
+            musicPlayer.SetVolume(volumeSlider.value); // this function call set the audio source volume
         }
         else
         {
@@ -51,15 +57,34 @@ public class SettingController : MonoBehaviour
         return PlayerPrefs.GetFloat(VOLUME_KEY, MIN_VOLUME); 
     }
 
+    public static void SetDifficultyValue(int difficulty)
+    {
+        if (difficulty >= MIN_DIFFICULTY && difficulty <= MAX_DIFFICULTY)
+        {
+            Debug.Log("Difficulty set to " + difficulty);
+            PlayerPrefs.SetInt(DIFFICULTY_KEY, difficulty);
+        }
+        else
+        {
+            Debug.LogError("Error while changing difficuty");
+        }
+    }
+
+    public static int GetDifficultyValue()
+    {
+        return PlayerPrefs.GetInt(DIFFICULTY_KEY, MIN_DIFFICULTY);
+    }
 
     public void SaveAndExit()
     {
         SetVolumeValue(volumeSlider.value);
+        SetDifficultyValue((int)difficultySlider.value);
         FindObjectOfType<Level>().LoadMainMenu();
     }
 
     public void SetDefaults()
     {
         volumeSlider.value = defaultVolume;
+        difficultySlider.value = defaultDifficulty;
     }
 }

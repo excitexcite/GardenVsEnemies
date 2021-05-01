@@ -11,12 +11,14 @@ using TMPro;
 public class LivesDisplay : MonoBehaviour
 {
 
-    [SerializeField] int lives = 5;
+    [SerializeField] int baseLives = 5;
     [SerializeField] int damage = 1;
     [SerializeField] TextMeshProUGUI textMeshPro;
+    int lives;
 
     private void Start()
     {
+        lives = baseLives - SettingController.GetDifficultyValue();
         UpdateDisplay();
     }
 

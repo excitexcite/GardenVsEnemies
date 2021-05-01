@@ -409,7 +409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6775026c59e613d41a63923c14f3ab35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lives: 1
+  baseLives: 3
   damage: 1
   textMeshPro: {fileID: 725523697}
 --- !u!114 &725523697
