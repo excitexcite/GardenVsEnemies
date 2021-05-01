@@ -26,7 +26,7 @@ public class LevelController : MonoBehaviour
     public void AttackerKilled() 
     { 
         numberOfAttackers--; 
-        if (numberOfAttackers <= 0 && leveTimerFinished)
+        if (numberOfAttackers <= 0 && leveTimerFinished && FindObjectOfType<LivesDisplay>().GetLive() > 0)
         {
             //StartCoroutine(HandleWinCondition());
             HandleWinCondition();

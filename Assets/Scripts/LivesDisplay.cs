@@ -34,4 +34,7 @@ public class LivesDisplay : MonoBehaviour
             FindObjectOfType<LevelController>().HandleLoseCondition();
         }
     }
+
+    public int GetLive() { return lives; }
+
 }

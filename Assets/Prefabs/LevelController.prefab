@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winLabel: {fileID: 0}
+  looseLabel: {fileID: 0}
   winSound: {fileID: 8300000, guid: 78e13e97fca021f49aba25957a57a584, type: 3}
   winSoundVolume: 0.5
   timeToLoad: 4
