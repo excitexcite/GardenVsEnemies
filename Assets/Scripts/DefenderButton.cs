@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// This script is used to change color (look like they become active)
 /// on defenders exaples (buttons) when player click on them. The script also set defender to create (setted values
-/// is used by DefenderSpawner.
+/// is used by DefenderSpawner).
 /// Placed on each defender button.
 /// </summary>
 public class DefenderButton : MonoBehaviour

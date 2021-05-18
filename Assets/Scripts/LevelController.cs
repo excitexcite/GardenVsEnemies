@@ -4,7 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 /// <summary>
-/// 
+/// This script is used to controll level complete and level fail canvas on game scene.
+/// Also used to turn on win sound on level complete condition.
+/// The script also track the game over condition and sets appropriate flag when the game is completed
 /// </summary>
 public class LevelController : MonoBehaviour
 {
@@ -24,6 +26,7 @@ public class LevelController : MonoBehaviour
 
     public void AttackerSpawned() { numberOfAttackers++; }
 
+    // function to check if there is no attackers
     public void AttackerKilled() 
     { 
         numberOfAttackers--; 
@@ -42,6 +45,8 @@ public class LevelController : MonoBehaviour
         FindObjectOfType<Level>().LoadNextScene();
     }*/
 
+    // Identify if the game is overed (completed) and set appropriate flag to PlayerPrefs. Also 
+    // load scene depending if game over condition is succed or not
     private void HandleWinCondition()
     {
         int sceneIndex = SceneManager.GetActiveScene().buildIndex;
@@ -66,6 +71,7 @@ public class LevelController : MonoBehaviour
         PlayerPrefs.SetInt(Level.GAME_COMPLETE_KEY, Level.GAME_COMPLETE);
     }
 
+    // makes level fail canvas active
     public void HandleLoseCondition()
     {
         looseLabel.SetActive(true);

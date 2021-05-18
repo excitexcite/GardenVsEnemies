@@ -5,6 +5,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+/// <summary>
+/// This script is used to allow change scenes and levels (if we talk about level progress). Also has function that enable/disable 
+/// level selection button on LevelSelectorScene. 
+/// </summary>
 public class Level : MonoBehaviour
 {
 
@@ -25,10 +29,6 @@ public class Level : MonoBehaviour
     // 0 means game is not complete, 1 - game complete
     public static int GAME_INCOMPLETE = 0;
     public static int GAME_COMPLETE = 1;
-
-    private bool levelComplete = false;
-
-    public void SetLevelCompleteOption(bool option) { levelComplete = option; }
 
     public int GetLevelAmount() { return levelAmount; }
 

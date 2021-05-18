@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// This script is used to specify fox attacker. Has functionality that allows fox to jump over the 
+/// This script is used to specify fox attacker. Has functions that allows fox to jump over the 
 /// stones (via animation).
 /// Placed on fox attacker
 /// </summary>

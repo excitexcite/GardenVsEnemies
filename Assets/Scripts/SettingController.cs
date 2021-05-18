@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+/// <summary>
+/// This script is used to allow settings to change. Defines default setting values and allow to change them
+/// via UI on setting screen.
+/// </summary>
 public class SettingController : MonoBehaviour
 {
 

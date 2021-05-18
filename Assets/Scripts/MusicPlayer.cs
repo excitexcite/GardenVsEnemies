@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
+/// <summary>
+/// The script is used to make music not to start from the very beging on every scene change.
+/// Also allows to set music volume
+/// </summary>
 public class MusicPlayer : MonoBehaviour
 {
     AudioSource audioSource;
