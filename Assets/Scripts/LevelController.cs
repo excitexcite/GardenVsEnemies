@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// 
@@ -43,9 +44,26 @@ public class LevelController : MonoBehaviour
 
     private void HandleWinCondition()
     {
+        int sceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int totalLevelAmount = FindObjectOfType<Level>().GetLevelAmount();
+        if (sceneIndex == totalLevelAmount)
+        {
+            SetGameCompleteOption();
+        }
         winLabel.SetActive(true);
+        if (PlayerPrefs.GetInt(Level.GAME_COMPLETE_KEY, Level.GAME_INCOMPLETE) == Level.GAME_INCOMPLETE)
+        {
+            PlayerPrefs.SetInt(Level.NEXT_LEVEL_KEY, sceneIndex + 1);
+        }
+       
+        PlayerPrefs.SetInt(Level.LAST_LEVEL_KEY, sceneIndex + 1);
         AudioSource.PlayClipAtPoint(winSound, Camera.main.transform.position, winSoundVolume);
         Time.timeScale = 0;
+    }
+
+    private void SetGameCompleteOption()
+    {
+        PlayerPrefs.SetInt(Level.GAME_COMPLETE_KEY, Level.GAME_COMPLETE);
     }
 
     public void HandleLoseCondition()
